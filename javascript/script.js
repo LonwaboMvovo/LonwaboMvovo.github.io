@@ -479,7 +479,7 @@ const canNext = () => {
         localStorage.weight_unit = weight_unit.value;
         localStorage.bmr_unit = bmr_unit.value;
         localStorage.date_format = date_format.value;
-        window.open('/html/composition_details.html', '_self');
+        window.open('/LonwaboMvovo.github.io/html/composition_details.html', '_self');
     }
     else {
         //Age:
@@ -535,14 +535,14 @@ const goSettings_age = () => {
     settings_weight_unitValue();
     settings_bmr_unitValue();
     settings_changeValue();
-    window.open('/html/user_details.html', '_self');
+    window.open('/LonwaboMvovo.github.io/html/user_details.html', '_self');
 }
 const goSettings_height = () => {
     settings_height_unitValue();
     settings_weight_unitValue();
     settings_bmr_unitValue();
     settings_changeValue();
-    window.open('/html/composition_details.html', '_self');
+    window.open('/LonwaboMvovo.github.io/html/composition_details.html', '_self');
 }
 const heightValue = () => {
     if (height.value === '') {
@@ -1031,7 +1031,7 @@ const canDone = () => {
         localStorage.bmr = bmr.value;
         localStorage.metabolic_age = metabolic_age.value;
         localStorage.body_water = body_water.value;
-        window.open('/html/progress.html', '_self');
+        window.open('/LonwaboMvovo.github.io/html/progress.html', '_self');
     }
     else {
         //Height:
@@ -2459,13 +2459,12 @@ const numberRows = () => {
 }
 
 //Home Page:
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname === "/LonwaboMvovo.github.io/index.html") {
     //Storage:
     if (typeof(Storage) === 'undefined') {
         document.querySelector('.header_msg').innerHTML = 'Unfortunately your browser does not support the type of storage we use. Try updating your browser or switching to another one.';
         start.classList.add('not');
     }
-
     else {
         start.addEventListener('click', () => {
             if (localStorage.localStorageMsg === undefined) {
@@ -2473,27 +2472,27 @@ if (window.location.pathname === "/index.html") {
             }
             else {
                 if (user_details_stored()) {
-                    window.open('/html/composition_details.html', '_self');
+                    window.open('/LonwaboMvovo.github.io/html/composition_details.html', '_self');
                 }
                 else {
-                    window.open('/html/user_details.html', '_self');
+                    window.open('/LonwaboMvovo.github.io/html/user_details.html', '_self');
                 }
             }
         })
         start_okay.addEventListener('click', () => {
             localStorage.localStorageMsg = true;
             if (user_details_stored()) {
-                window.open('/html/composition_details.html', '_self');
+                window.open('/LonwaboMvovo.github.io/html/composition_details.html', '_self');
             }
             else {
-                window.open('/html/user_details.html', '_self');
+                window.open('/LonwaboMvovo.github.io/html/user_details.html', '_self');
             }
         })
     }
 }
 
 //User Details page:
-if (window.location.pathname === "/html/user_details.html") {
+if (window.location.pathname === "/LonwaboMvovo.github.io/html/user_details.html") {
     if (localStorage.name !== undefined) {
         name.value = localStorage.name;
     }
@@ -2567,7 +2566,7 @@ if (window.location.pathname === "/html/user_details.html") {
 }
 
 //Composition Details page
-if (window.location.pathname === '/html/composition_details.html') {
+if (window.location.pathname === '/LonwaboMvovo.github.io/html/composition_details.html') {
     //Height:
     unit[0].innerText = `(${localStorage.height_unit})`;
     height.addEventListener('focusout', heightValue)
@@ -2628,12 +2627,12 @@ if (window.location.pathname === '/html/composition_details.html') {
     
     //Back:
     back.addEventListener('click', () => {
-        window.open('/html/user_details.html', '_self');
+        window.open('/LonwaboMvovo.github.io/html/user_details.html', '_self');
     })
 }
 
 //Progress page:
-if (window.location.pathname === '/html/progress.html') {
+if (window.location.pathname === '/LonwaboMvovo.github.io/html/progress.html') {
     //Progress Table:
     if (numberRows() === true) {
         //Name:
@@ -2754,10 +2753,10 @@ if (window.location.pathname === '/html/progress.html') {
     //Add Entry:
     add.addEventListener('click', () => {
         if (user_details_stored()) {
-            window.open('/html/composition_details.html', '_self');
+            window.open('/LonwaboMvovo.github.io/html/composition_details.html', '_self');
         }
         else {
-            window.open('/html/user_details.html', '_self');
+            window.open('/LonwaboMvovo.github.io/html/user_details.html', '_self');
         }
     })
 
