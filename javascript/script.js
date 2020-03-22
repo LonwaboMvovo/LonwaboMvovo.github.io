@@ -2459,7 +2459,7 @@ const numberRows = () => {
 }
 
 //Home Page:
-if (window.location.pathname === "/html/index.html") {
+if (window.location.pathname === "/index.html") {
     //Storage:
     if (typeof(Storage) === 'undefined') {
         document.querySelector('.header_msg').innerHTML = 'Unfortunately your browser does not support the type of storage we use. Try updating your browser or switching to another one.';
