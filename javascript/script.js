@@ -2459,7 +2459,7 @@ const numberRows = () => {
 }
 
 //Home Page:
-if (window.location.pathname === "/") {
+if (window.location.pathname === "/" || window.location.pathname === '/LonwaboMvovo.github.io/index.html') {
     //Storage:
     if (typeof(Storage) === 'undefined') {
         document.querySelector('.header_msg').innerHTML = 'Unfortunately your browser does not support the type of storage we use. Try updating your browser or switching to another one.';
@@ -2492,7 +2492,7 @@ if (window.location.pathname === "/") {
 }
 
 //User Details page:
-if (window.location.pathname === "/html/user_details.html") {
+if (window.location.pathname === "/html/user_details.html" || window.location.pathname === '/LonwaboMvovo.github.io/html/user_details.html') {
     if (localStorage.name !== undefined) {
         name.value = localStorage.name;
     }
@@ -2807,3 +2807,6 @@ settings_done.addEventListener('click', () => {
 settings_age.addEventListener('click', goSettings_age);
 //Settings Height: 
 settings_height.addEventListener('click', goSettings_height);
+
+//Make responsive
+//Tab should allow you to go to next page
