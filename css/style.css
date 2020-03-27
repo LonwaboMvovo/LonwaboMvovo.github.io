@@ -55,12 +55,6 @@ header.top_page a:hover {
     margin-bottom: 100px;
 }
 
-/* .header_msg.progress {
-    font-size: 3.2rem;
-    margin: 20px;
-    margin-bottom: 100px;
-} */
-
 a {
     color: black;
     margin: 0px 10px;
@@ -187,7 +181,6 @@ input[type=number]::-webkit-outer-spin-button {
 table {
     display: block;
     width: 95%;
-    /* height: 300px; */
     overflow-y: scroll;
     text-align: center;
     margin-top: 50px;
@@ -292,11 +285,6 @@ canvas {
     from {opacity: 0;}
     to {opacity:1 ;}
 }
-
-/* #start {
-    display: block;
-    margin: 10px auto;
-} */
 
 #start_okay {
     display: block;
