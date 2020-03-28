@@ -1,2 +1,2 @@
-# LonwaboMvovo.github.io.
-Hosting for latest project
+# Portfolio
+Portfolio of all Lonwabo Mvovo's projects
